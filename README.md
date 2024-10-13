@@ -36,3 +36,38 @@ EduRecap is a mobile application designed to enhance the learning experience for
    ```bash
    git clone https://github.com/BALASANKARP/Edurecap.git
    cd Edurecap
+Install Frontend Dependencies:
+
+bash
+Copy code
+cd app
+npm install
+Start the Frontend:
+
+bash
+Copy code
+npm start
+Set Up the Backend:
+
+Navigate to the backend directory and install dependencies:
+bash
+Copy code
+cd ../backend
+pip install -r requirements.txt
+Run the Backend:
+
+bash
+Copy code
+uvicorn fast_api:app --reload
+Contributing
+Contributions are welcome! If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
+
+
+
+### Customization Tips:
+- **Update Features**: If there are more features or specific details about how they work, add them.
+- **Installation Instructions**: Ensure the installation steps match the actual requirements for running your project.
+- **License**: Specify the license type you want to use (if applicable).
+- **Contact Information**: You can add your contact information if you’d like to receive inquiries or feedback.
+
+Feel free to modify this template to fit your project better! Let me know if you need any further adjustments or details.
