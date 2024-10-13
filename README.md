@@ -36,12 +36,11 @@ EduRecap is a mobile application designed to enhance the learning experience for
    ```bash
    git clone https://github.com/BALASANKARP/Edurecap.git
    cd Edurecap
-Install Frontend Dependencies:
-
-bash
-Copy code
-cd app
-npm install
+2.**Install Frontend Dependencies**:
+```bash
+   Copy code
+   cd app
+   npm install
 Start the Frontend:
 
 bash
