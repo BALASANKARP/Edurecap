@@ -41,7 +41,7 @@ EduRecap is a mobile application designed to enhance the learning experience for
    Copy code
    cd app
    npm install
-Start the Frontend:
+3.**Start the Frontend**:
 
 bash
 Copy code
