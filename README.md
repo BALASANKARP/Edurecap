@@ -43,8 +43,6 @@ npm install
 
 Start the Frontend:
 
-bash
-Copy code
 npm start
 Set Up the Backend: Navigate to the backend directory and install dependencies:
 
