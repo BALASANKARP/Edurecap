@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { Redirect, Tabs } from "expo-router";
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import Icon from "react-native-vector-icons/MaterialIcons"; // Import the icon library
 
 import { icons } from "../../constants";
 import { Loader } from "../../components";
@@ -8,16 +9,25 @@ import { useGlobalContext } from "../../context/GlobalProvider";
 
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
-    <View className="flex items-center justify-center gap-2">
-      <Image
-        source={icon}
-        resizeMode="contain"
-        tintColor={color}
-        className="w-6 h-6"
-      />
+    <View style={{ alignItems: 'center', justifyContent: 'center', gap: 2 }}>
+      {icon ? (
+        <Icon
+          name={icon}
+          size={24}
+          color={color}
+        />
+      ) : (
+        <Image
+          source={icons[icon]}
+          style={{ width: 24, height: 24, tintColor: color }}
+        />
+      )}
       <Text
-        className={`${focused ? "font-psemibold" : "font-pregular"} text-xs`}
-        style={{ color: color }}
+        style={{
+          color: color,
+          fontWeight: focused ? '600' : '400', // Adjust font weight based on focus
+          fontSize: 12, // Adjust font size
+        }}
       >
         {name}
       </Text>
@@ -52,7 +62,7 @@ const TabLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.home}
+                icon="home"
                 color={color}
                 name="Home"
                 focused={focused}
@@ -67,7 +77,7 @@ const TabLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.bookmark}
+                icon="bookmark"
                 color={color}
                 name="Bookmark"
                 focused={focused}
@@ -75,7 +85,6 @@ const TabLayout = () => {
             ),
           }}
         />
-
         <Tabs.Screen
           name="create"
           options={{
@@ -83,7 +92,7 @@ const TabLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.plus}
+                icon="add"
                 color={color}
                 name="Create"
                 focused={focused}
@@ -98,9 +107,39 @@ const TabLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.profile}
+                icon="person"
                 color={color}
                 name="Profile"
+                focused={focused}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="chatbot"
+          options={{
+            title: "Chatbot",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon="chat"
+                color={color}
+                name="Chatbot"
+                focused={focused}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="audio_processing"
+          options={{
+            title: "Audio Processing",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon="audiotrack" // Choose an appropriate icon name
+                color={color}
+                name="Audio"
                 focused={focused}
               />
             ),
