@@ -21,7 +21,7 @@ app = FastAPI()
 model = whisper.load_model("base")
 
 # Set up the Groq client with your API key
-api_key = os.getenv("GROQ_API_KEY", "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")
+api_key = os.getenv("GROQ_API_KEY", "API_KEY")
 client = Groq(api_key=api_key)
 
 # Load pre-trained model and tokenizer for embeddings
