@@ -18,7 +18,7 @@ EduRecap is a mobile application designed to enhance the learning experience for
 
 ## Video Demonstration
 
-You can [download and watch the video](./path/to/video/demo.mp4) to see a demonstration of EduRecap.
+You can [download and watch the video](edurecap_demo_file.mp4) to see a demonstration of EduRecap.
 
 > **Note**: GitHub does not support directly playing videos within the repository. You can click the link above to download and view the demo video.
 
