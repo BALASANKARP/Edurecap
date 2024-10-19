@@ -71,6 +71,4 @@ You can [download and watch the video](./path/to/video/demo.mp4) to see a demons
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request.
-```
 
-In the line `[download and watch the video](./path/to/video/demo.mp4)`, replace `./path/to/video/demo.mp4` with the actual path to your video file within the repo. This link will allow users to download the video from the repository.
