@@ -1,5 +1,5 @@
 
-```markdown
+
 # EduRecap: Intelligent Text Summarization and Concept Extraction Tool
 
 ## Project Overview
@@ -28,7 +28,7 @@ You can [download and watch the video](./path/to/video/demo.mp4) to see a demons
 - **Backend**: FastAPI
 - **State Management**: Redux
 - **Libraries**: Various libraries for audio processing, text summarization, and chatbot functionality.
-```
+
 ## Installation
 
 ### Prerequisites
