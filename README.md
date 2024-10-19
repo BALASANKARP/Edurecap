@@ -1,6 +1,3 @@
-If the video is located within your repository folder, you can link it directly from the repo by using a relative file path. However, note that GitHub does not natively support embedded video playback from local files, so users will have to download the video or click a link to view it.
-
-Here’s an updated README that links the video from your repository:
 
 ```markdown
 # EduRecap: Intelligent Text Summarization and Concept Extraction Tool
@@ -31,7 +28,7 @@ You can [download and watch the video](./path/to/video/demo.mp4) to see a demons
 - **Backend**: FastAPI
 - **State Management**: Redux
 - **Libraries**: Various libraries for audio processing, text summarization, and chatbot functionality.
-
+```
 ## Installation
 
 ### Prerequisites
@@ -47,7 +44,7 @@ You can [download and watch the video](./path/to/video/demo.mp4) to see a demons
    ```bash
    git clone https://github.com/BALASANKARP/Edurecap.git
    cd Edurecap
-   ```
+   
 
 2. **Install Frontend Dependencies**:
    ```bash
