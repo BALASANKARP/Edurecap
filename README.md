@@ -1,4 +1,8 @@
+If the video is located within your repository folder, you can link it directly from the repo by using a relative file path. However, note that GitHub does not natively support embedded video playback from local files, so users will have to download the video or click a link to view it.
 
+Here’s an updated README that links the video from your repository:
+
+```markdown
 # EduRecap: Intelligent Text Summarization and Concept Extraction Tool
 
 ## Project Overview
@@ -14,6 +18,12 @@ EduRecap is a mobile application designed to enhance the learning experience for
 - **Chatbot Integration**: Interact with a chatbot to ask specific questions based on lecture summaries without having to go through the entire lecture.
 - **Bookmark Screen**: Store transcripts and audio files, organized by subject for easy retrieval and playback.
 - **Profile Management**: View profile details and sign out.
+
+## Video Demonstration
+
+You can [download and watch the video](./path/to/video/demo.mp4) to see a demonstration of EduRecap.
+
+> **Note**: GitHub does not support directly playing videos within the repository. You can click the link above to download and view the demo video.
 
 ## Technologies Used
 
@@ -37,21 +47,33 @@ EduRecap is a mobile application designed to enhance the learning experience for
    ```bash
    git clone https://github.com/BALASANKARP/Edurecap.git
    cd Edurecap
-**Install Frontend Dependencies**:
+   ```
 
+2. **Install Frontend Dependencies**:
+   ```bash
    cd app
    npm install
+   ```
 
-**Start the Frontend**:
-
+3. **Start the Frontend**:
+   ```bash
    npm start
-**Set Up the Backend**: Navigate to the backend directory and install dependencies:
+   ```
 
+4. **Set Up the Backend**: Navigate to the backend directory and install dependencies:
+   ```bash
    cd ../backend
    pip install -r requirements.txt
-**Run the Backend**:
+   ```
 
-
+5. **Run the Backend**:
+   ```bash
    uvicorn fast_api:app --reload
-**Contributing**
+   ```
+
+## Contributing
+
 Contributions are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request.
+```
+
+In the line `[download and watch the video](./path/to/video/demo.mp4)`, replace `./path/to/video/demo.mp4` with the actual path to your video file within the repo. This link will allow users to download the video from the repository.
